@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="vmi438126" name="junit.model.ModelVulnTest" skipped="0" tests="1" time="3.199" timestamp="2020-11-23T01:48:21">
+  <properties>
+    <property name="ant.library.dir" value="C:\Users\Administrator\Desktop\JAVA ext libraries\apache-ant-1.10.7\lib" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.specification.version" value="13" />
+    <property name="sun.cpu.isalist" value="amd64" />
+    <property name="sun.jnu.encoding" value="Cp1252" />
+    <property name="java.class.path" value="C:\Users\Administrator\eclipse-workspace\JSPvulnerabilites\lib\junit.jar;C:\Users\Administrator\eclipse-workspace\JSPvulnerabilites\lib\org.hamcrest.core_1.3.0.v20180420-1519.jar;C:\Users\Administrator\eclipse-workspace\JSPvulnerabilites\lib\mysql-connector-java-8.0.21.jar;C:\Users\Administrator\eclipse-workspace\JSPvulnerabilites\bin;C:\Users\Administrator\Desktop\JAVA ext libraries\apache-ant-1.10.7\lib\ant-launcher.jar;C:\Users\Administrator\Desktop\JAVA ext libraries\apache-ant-1.10.7\lib\ant.jar;C:\Users\Administrator\Desktop\JAVA ext libraries\apache-ant-1.10.7\lib\ant-junit.jar;C:\Users\Administrator\Desktop\JAVA ext libraries\apache-ant-1.10.7\lib\ant-junit4.jar" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="user.variant" value="" />
+    <property name="java.vendor.url" value="https://java.oracle.com/" />
+    <property name="os.name" value="Windows Server 2016" />
+    <property name="java.vm.specification.version" value="13" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="user.country" value="US" />
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-13\bin" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner junit.model.ModelVulnTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\Administrator\eclipse-workspace\JSPvulnerabilites\result\junitModelVulnTest.xml crashfile=C:\Users\Administrator\eclipse-workspace\JSPvulnerabilites\junitvmwatcher79172297807469349.properties propsfile=C:\Users\Administrator\eclipse-workspace\JSPvulnerabilites\junit9083667408289131162.properties" />
+    <property name="jdk.debug" value="release" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="user.home" value="C:\Users\Administrator" />
+    <property name="user.language" value="en" />
+    <property name="sun.stderr.encoding" value="cp437" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="_jacoco.agentFile" value="C:\Users\ADMINI~1\AppData\Local\Temp\2\jacocoagent7594146856977775512.jar" />
+    <property name="java.version.date" value="2019-09-17" />
+    <property name="java.home" value="C:\Program Files\Java\jdk-13" />
+    <property name="basedir" value="C:\Users\Administrator\eclipse-workspace\JSPvulnerabilites" />
+    <property name="file.separator" value="\" />
+    <property name="java.vm.compressedOopsMode" value="32-bit" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="sun.stdout.encoding" value="cp437" />
+    <property name="ant.java.version" value="13" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="user.script" value="" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="java.runtime.version" value="13+33" />
+    <property name="user.name" value="Administrator" />
+    <property name="ant.file" value="C:\Users\Administrator\eclipse-workspace\JSPvulnerabilites\build.xml" />
+    <property name="path.separator" value=";" />
+    <property name="os.version" value="10.0" />
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+    <property name="file.encoding" value="Cp1252" />
+    <property name="ant.project.invoked-targets" value="tests" />
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+    <property name="ant.core.lib" value="C:\Users\Administrator\Desktop\JAVA ext libraries\apache-ant-1.10.7\lib\ant.jar" />
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/" />
+    <property name="java.io.tmpdir" value="C:\Users\ADMINI~1\AppData\Local\Temp\2\" />
+    <property name="java.version" value="13" />
+    <property name="user.dir" value="C:\Users\Administrator\eclipse-workspace\JSPvulnerabilites" />
+    <property name="os.arch" value="amd64" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.home" value="C:\Users\Administrator\Desktop\JAVA ext libraries\apache-ant-1.10.7\bin\.." />
+    <property name="sun.os.patch.level" value="" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.10.7 compiled on September 1 2019" />
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-13\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk-13\bin;C:\oraclexe\app\oracle\product\11.2.0\server\bin;C:\Program Files (x86)\EasyPHP-DevServer-14.1VC11\binaries\php\php_runningversion;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files (x86)\Brackets\command;C:\Users\Administrator\Desktop\JAVA ext libraries\sonar-scanner-4.5.0.2216-windows\bin;C:\Users\Administrator\Desktop\JAVA ext libraries\apache-ant-1.10.7\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Git\cmd;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;C:\Users\Administrator\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\AppData\Local\GitHubDesktop\bin;." />
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="java.vm.version" value="13+33" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="java.class.version" value="57.0" />
+  </properties>
+  <testcase classname="junit.model.ModelVulnTest" name="testUser" time="2.937" />
+  <system-out><![CDATA[Driver OK !!! 
+!Connection établie !!!
+]]></system-out>
+  <system-err><![CDATA[Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
+]]></system-err>
+</testsuite>

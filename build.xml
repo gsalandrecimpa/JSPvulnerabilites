@@ -1,0 +1,45 @@
+<project xmlns:jacoco="antlib:org.jacoco.ant">
+	
+<target name="clean">
+	<delete dir="bin"/>
+	<delete dir="result"/>
+</target>
+	
+<target name="compile">
+	<mkdir dir="bin"/>
+	<javac destdir="bin" srcdir="src\model;src\secu;test\junit\model" classpath="lib\junit.jar"/>
+</target>
+	
+<target name="tests" depends="compile">
+	<mkdir dir="result"/>
+	<jacoco:coverage destfile="result\jacoco.exec">
+		<junit fork="true" forkmode="once">
+			<classpath>
+				<pathelement location="lib\junit.jar"/>
+				<pathelement location="lib\org.hamcrest.core_1.3.0.v20180420-1519.jar"/>
+				<pathelement location="lib\mysql-connector-java-8.0.21.jar"/>
+				<pathelement location="bin"/>
+			</classpath>
+			<formatter type="xml"/>
+			<test name="junit.model.ModelVulnTest" outfile="result\junitModelVulnTest"/>
+		</junit>
+	</jacoco:coverage>
+	
+	<jacoco:report>
+		<executiondata>
+			<file file="result\jacoco.exec"/>
+		</executiondata>
+		<structure name="jacoco">
+			<classfiles>
+				<fileset dir="bin"/>
+			</classfiles>
+				<sourcefiles encoding="UTF-8">
+				<fileset dir="src"/>
+			</sourcefiles>
+		</structure>
+		<html destdir="result\jacoco"/>
+		<xml destfile="result\jacoco.xml"/>
+	</jacoco:report>
+</target>
+	
+</project>

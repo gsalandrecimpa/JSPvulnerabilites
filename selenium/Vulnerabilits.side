@@ -1,0 +1,476 @@
+{
+  "id": "ebc24110-d814-4fe3-b1b7-a8ef455375ce",
+  "version": "2.0",
+  "name": "Vulnerabilités",
+  "url": "http://localhost:8080/JSPvulnerabilites/",
+  "tests": [{
+    "id": "f3b4e13a-c25d-444c-bf50-0a7ba6444693",
+    "name": "scenario1 - création/administration de compte/acces",
+    "commands": [{
+      "id": "6a4df494-0df2-4b7c-8c84-6b3dbdc047ec",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/JSPvulnerabilites/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24a8b27a-f337-4f09-8360-02659daf0e8a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1020",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0b251a1e-d1bd-44fb-ae98-b00f5b48f0ae",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=s'enregistrer",
+      "targets": [
+        ["linkText=s'enregistrer", "linkText"],
+        ["css=a", "css:finder"],
+        ["xpath=//a[contains(@href, '/JSPvulnerabilites/register')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0ab3fcd5-3048-49bd-a342-5ee170741d97",
+      "comment": "",
+      "command": "type",
+      "target": "id=login",
+      "targets": [
+        ["id=login", "id"],
+        ["name=login", "name"],
+        ["css=#login", "css:finder"],
+        ["xpath=//input[@id='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "root"
+    }, {
+      "id": "6436cd03-7dc4-4aa3-9e76-1252f082f0d6",
+      "comment": "",
+      "command": "click",
+      "target": "id=pwd",
+      "targets": [
+        ["id=pwd", "id"],
+        ["name=pwd", "name"],
+        ["css=#pwd", "css:finder"],
+        ["xpath=//input[@id='pwd']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bddc085d-7b66-44ea-a2b5-eea672646d75",
+      "comment": "",
+      "command": "type",
+      "target": "id=pwd",
+      "targets": [
+        ["id=pwd", "id"],
+        ["name=pwd", "name"],
+        ["css=#pwd", "css:finder"],
+        ["xpath=//input[@id='pwd']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "monpassword"
+    }, {
+      "id": "0f14030c-15c2-418b-aed0-7d65a50e2b34",
+      "comment": "",
+      "command": "click",
+      "target": "id=repwd",
+      "targets": [
+        ["id=repwd", "id"],
+        ["name=repwd", "name"],
+        ["css=#repwd", "css:finder"],
+        ["xpath=//input[@id='repwd']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "830221d7-13ec-41a1-af3a-5498c1509581",
+      "comment": "",
+      "command": "type",
+      "target": "id=repwd",
+      "targets": [
+        ["id=repwd", "id"],
+        ["name=repwd", "name"],
+        ["css=#repwd", "css:finder"],
+        ["xpath=//input[@id='repwd']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "monpassword"
+    }, {
+      "id": "0ee10616-aeb6-4ac6-8c3d-adb31d4cc3f4",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3399578e-8c91-4559-b80e-b8562c2a2166",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.erreur",
+      "targets": [
+        ["css=.erreur", "css:finder"],
+        ["xpath=//p", "xpath:position"]
+      ],
+      "value": "Ce nom d'utilisateur existe déjà"
+    }, {
+      "id": "dc7fd188-a6b5-4c2d-bc96-fad4ebec6288",
+      "comment": "",
+      "command": "type",
+      "target": "id=login",
+      "targets": [
+        ["id=login", "id"],
+        ["name=login", "name"],
+        ["css=#login", "css:finder"],
+        ["xpath=//input[@id='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testselenium"
+    }, {
+      "id": "5f533e55-2ddb-4b6c-9462-fbcdf6a504f5",
+      "comment": "",
+      "command": "click",
+      "target": "id=pwd",
+      "targets": [
+        ["id=pwd", "id"],
+        ["name=pwd", "name"],
+        ["css=#pwd", "css:finder"],
+        ["xpath=//input[@id='pwd']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcd209b0-7999-4152-95eb-2560130865ac",
+      "comment": "",
+      "command": "type",
+      "target": "id=pwd",
+      "targets": [
+        ["id=pwd", "id"],
+        ["name=pwd", "name"],
+        ["css=#pwd", "css:finder"],
+        ["xpath=//input[@id='pwd']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "monpassword"
+    }, {
+      "id": "1e700a6f-20ab-429f-9307-46fcdea740ec",
+      "comment": "",
+      "command": "click",
+      "target": "id=repwd",
+      "targets": [
+        ["id=repwd", "id"],
+        ["name=repwd", "name"],
+        ["css=#repwd", "css:finder"],
+        ["xpath=//input[@id='repwd']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3044f94e-5e4c-4f4b-9b57-a3f08ededee9",
+      "comment": "",
+      "command": "type",
+      "target": "id=repwd",
+      "targets": [
+        ["id=repwd", "id"],
+        ["name=repwd", "name"],
+        ["css=#repwd", "css:finder"],
+        ["xpath=//input[@id='repwd']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "monpassword"
+    }, {
+      "id": "da0d008a-f5da-4606-9c78-32eb50bf0b94",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "605b9701-097a-4a98-ae92-1573dc2ed56f",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Vulnérabilités",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "72b87f22-70ca-47cb-8626-488b0a49a10f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=se déconnecter",
+      "targets": [
+        ["linkText=se déconnecter", "linkText"],
+        ["css=a:nth-child(8)", "css:finder"],
+        ["xpath=//a[contains(text(),'se déconnecter')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/JSPvulnerabilites/logout')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'se déconnecter')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e95a8c6d-8262-479d-a762-de5bb7e686e4",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Vulnérabilités - Connexion",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0a696537-0990-4110-8b12-802c26c5f5a6",
+      "comment": "",
+      "command": "click",
+      "target": "id=login",
+      "targets": [
+        ["id=login", "id"],
+        ["name=login", "name"],
+        ["css=#login", "css:finder"],
+        ["xpath=//input[@id='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ac3bf6e4-dd2a-4710-8e24-9def43c38d57",
+      "comment": "",
+      "command": "type",
+      "target": "id=login",
+      "targets": [
+        ["id=login", "id"],
+        ["name=login", "name"],
+        ["css=#login", "css:finder"],
+        ["xpath=//input[@id='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "root"
+    }, {
+      "id": "d6d7c069-083f-4f41-97bf-8717128e911e",
+      "comment": "",
+      "command": "click",
+      "target": "id=pwd",
+      "targets": [
+        ["id=pwd", "id"],
+        ["name=pwd", "name"],
+        ["css=#pwd", "css:finder"],
+        ["xpath=//input[@id='pwd']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f544bcd4-850b-4f80-a281-dc9ef42f66a5",
+      "comment": "",
+      "command": "type",
+      "target": "id=pwd",
+      "targets": [
+        ["id=pwd", "id"],
+        ["name=pwd", "name"],
+        ["css=#pwd", "css:finder"],
+        ["xpath=//input[@id='pwd']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "depart0"
+    }, {
+      "id": "5f68c43f-73d2-47ac-b158-908c3e7b6d9a",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a438894-1cab-480c-9bad-39fb57db3b9d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Administrer utilisateurs",
+      "targets": [
+        ["linkText=Administrer utilisateurs", "linkText"],
+        ["css=a:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Administrer utilisateurs')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/JSPvulnerabilites/admin/users')]", "xpath:href"],
+        ["xpath=//div[2]/a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'Administrer utilisateurs')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b6cbe1b-103e-4490-b761-9a9187e47734",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//td[text()='testselenium']//following::td[2]//child::button[@name='resetpwd'] ",
+      "targets": [
+        ["css=tr:nth-child(3) > td:nth-child(3) > button", "css:finder"],
+        ["xpath=(//button[@name='resetpwd'])[2]", "xpath:attributes"],
+        ["xpath=//tr[3]/td[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c5d0923-9246-4d42-8a18-4fae405fb48e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=se déconnecter",
+      "targets": [
+        ["linkText=se déconnecter", "linkText"],
+        ["css=a:nth-child(8)", "css:finder"],
+        ["xpath=//a[contains(text(),'se déconnecter')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/JSPvulnerabilites/logout')]", "xpath:href"],
+        ["xpath=//a[4]", "xpath:position"],
+        ["xpath=//a[contains(.,'se déconnecter')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0681acfb-4457-4276-bacf-1911238f2bf6",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Vulnérabilités - Connexion",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e5453eb7-cfb5-456a-984c-41628583c3e1",
+      "comment": "",
+      "command": "click",
+      "target": "id=login",
+      "targets": [
+        ["id=login", "id"],
+        ["name=login", "name"],
+        ["css=#login", "css:finder"],
+        ["xpath=//input[@id='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a915a1e-2bf2-467d-b26d-7fcb34f77d33",
+      "comment": "",
+      "command": "type",
+      "target": "id=login",
+      "targets": [
+        ["id=login", "id"],
+        ["name=login", "name"],
+        ["css=#login", "css:finder"],
+        ["xpath=//input[@id='login']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "testselenium"
+    }, {
+      "id": "53f4d05a-c584-4f0e-80e9-64d86199ef1b",
+      "comment": "",
+      "command": "click",
+      "target": "id=pwd",
+      "targets": [
+        ["id=pwd", "id"],
+        ["name=pwd", "name"],
+        ["css=#pwd", "css:finder"],
+        ["xpath=//input[@id='pwd']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c4f81912-d815-467d-8f8a-db02c1b35182",
+      "comment": "",
+      "command": "type",
+      "target": "id=pwd",
+      "targets": [
+        ["id=pwd", "id"],
+        ["name=pwd", "name"],
+        ["css=#pwd", "css:finder"],
+        ["xpath=//input[@id='pwd']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "monpassword"
+    }, {
+      "id": "0d34f8d2-a826-45c4-bf9e-c55c359b6711",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6f5169f9-4ac4-47ce-882b-8e0d4d8c2b57",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Vulnérabilités - Connexion",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "60e64ef3-ffc5-402c-b6c4-59b591d97237",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.erreur",
+      "targets": [
+        ["css=.erreur", "css:finder"],
+        ["xpath=//p", "xpath:position"],
+        ["xpath=//p[contains(.,'La connexion a échoué')]", "xpath:innerText"]
+      ],
+      "value": "La connexion a échoué"
+    }, {
+      "id": "66316f6d-da9b-48f4-b1fb-dddb3f3473a8",
+      "comment": "",
+      "command": "click",
+      "target": "id=pwd",
+      "targets": [
+        ["id=pwd", "id"],
+        ["name=pwd", "name"],
+        ["css=#pwd", "css:finder"],
+        ["xpath=//input[@id='pwd']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e27cf864-67ff-4e32-ac07-6c475e545e8a",
+      "comment": "",
+      "command": "type",
+      "target": "id=pwd",
+      "targets": [
+        ["id=pwd", "id"],
+        ["name=pwd", "name"],
+        ["css=#pwd", "css:finder"],
+        ["xpath=//input[@id='pwd']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "depart0"
+    }, {
+      "id": "daffa5ad-66f2-42f8-9d4b-d04bcf36bea6",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit",
+      "targets": [
+        ["name=submit", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='submit']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "84b5634f-d829-4c48-9c94-36e91ccbebff",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Vulnérabilités",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "832b3f1b-0b2f-4e67-b799-12b0b0b5cbb5",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:8080/", "http://localhost:8080/JSPvulnerabilites/"],
+  "plugins": []
+}
