@@ -395,8 +395,6 @@ public class ModelVuln {
 			prst.setInt(1, sol.getId());
 			prst.setString(2, logNom);
 			prst.executeUpdate();
-			// update logiciels
-			sol.getLogiciels().add(logNom);
 		} catch (NumberFormatException | SQLException e) {
 			e.printStackTrace();
 			return;
